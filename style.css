@@ -332,14 +332,16 @@ Styles
     color: var(--clr-grey-2);
   }
   .right-swing {
-    position: absolute;
+    /* position: absolute;
     top: 0;
     margin-top: 0.5rem;
     right: 0;
     width: 390px;
     display: inline-block;
     padding: 0.25rem 0.25rem;
-    text-align: center;
+    text-align: center; */
+    float: right;
+    margin-top: 0.5rem;
   }
   .like-pair {
     float: left;
