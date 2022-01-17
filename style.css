@@ -42,10 +42,7 @@ a {
   color: black;
 }
 
-@media screen and (min-width: 1px) {
-  a > .mic-hide {
-    display: none;
-  }
+@media screen and (max-width: 1px) {
   .view-1 {
     display: none;
   }
@@ -56,7 +53,7 @@ a {
     display: none;
   }
 }
-@media screen and (max-width: 20px) {
+/* @media screen and (max-width: 20px) {
   a > .mic-hide {
     display: inline;
   }
@@ -66,9 +63,12 @@ a {
   .thumbs-up {
     margin-left: 0;
   }
-}
+} */
 @media screen and (max-width: 600px) {
   .text-place {
+    display: none;
+  }
+  #mic-hide {
     display: none;
   }
 }
@@ -103,11 +103,7 @@ a {
     padding: 1rem 0;
     float: right;
   }
-  .fa-microphone {
-    padding: 0.6rem 0.7rem 0.6rem 0.7rem;
-    border-radius: 50%;
-    background: var(--clr-offWhite);
-  }
+
   .fa-video {
     margin-right: 0.6rem;
   }
@@ -164,9 +160,7 @@ a {
     float: right;
     width: 30%;
   }
-  .fa-microphone {
-    float: left;
-  }
+
   .float-right {
     float: right;
     margin-right: 1rem;
@@ -198,13 +192,6 @@ a {
     right: 0;
     float: right;
     width: 26%;
-  }
-  .fa-microphone {
-    float: left;
-  }
-  .float-right {
-    float: right;
-    margin-right: 1rem;
   }
 }
 /* 
@@ -267,8 +254,17 @@ Styles
   float: right;
 }
 .fa-microphone {
+  padding: 0.6rem 0.7rem 0.6rem 0.7rem;
+  border-radius: 50%;
+  background: var(--clr-offWhite);
+  /* float: left; */
   margin-right: 1.5rem;
 }
+.float-right {
+  float: right;
+  margin-right: 1rem;
+}
+
 .fa-video {
   margin-right: 1rem;
 }
@@ -407,6 +403,9 @@ Styles
   .second-break {
     display: none;
   }
+  /* #mic-show {
+    display: inline-block;
+  } */
 }
 @media screen and (min-width: 650px) {
   .view-3 {
