@@ -41,6 +41,29 @@ a {
 .icon-links {
   color: black;
 }
+
+@media screen and (min-width: 2px) {
+  a > .mic-hide {
+    display: none;
+  }
+  .view-1 {
+    display: none;
+  }
+  .thumbs-up {
+    margin-left: 0.8rem;
+  }
+}
+@media screen and (max-width: 20px) {
+  a > .mic-hide {
+    display: inline;
+  }
+  .view-1 {
+    display: inline;
+  }
+  .thumbs-up {
+    margin-left: 0;
+  }
+}
 @media screen and (max-width: 600px) {
   .text-place {
     display: none;
