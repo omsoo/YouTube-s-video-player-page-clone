@@ -52,6 +52,9 @@ a {
   .thumbs-up {
     margin-left: 0.8rem;
   }
+  .save-ellip-hide {
+    display: none;
+  }
 }
 @media screen and (max-width: 20px) {
   a > .mic-hide {
@@ -303,7 +306,7 @@ Styles
   width: 100%;
   height: 100%;
 }
-@media screen and (min-width: 1px) {
+@media screen and (min-width: 6px) {
   .header-text {
     position: relative;
     width: 90%;
@@ -377,7 +380,7 @@ Styles
     font-size: var(--fontSize);
   }
   .fa-ellipsis-h {
-    margin-left: 1rem;
+    margin-left: 0.1rem;
   }
   .save-text {
     display: inline-block;
