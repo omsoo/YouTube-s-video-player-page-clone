@@ -94,6 +94,7 @@ a {
 @media screen and (max-width: 600px) {
   .text-place {
     display: none;
+    /* background: red; */
   }
 }
 @media screen and (max-width: 530px) {
@@ -102,6 +103,11 @@ a {
   }
 }
 @media screen and (min-width: 600px) {
+  body {
+    /* width: 90%; */
+    overflow-x: hidden;
+    /* background: red; */
+  }
   input[type="text"] {
     border: 1px solid rgb(214, 210, 210);
     padding-left: 0.6rem;
@@ -175,6 +181,27 @@ a {
   }
 }
 @media screen and (min-width: 1012px) {
+  #main-general-container {
+    position: relative;
+    /* background: orange; */
+  }
+  .left-section {
+    width: 62%;
+  }
+  .comment-sort {
+    /* background: red; */
+    /* position: absolute;
+    bottom: 0;
+    left: 0; */
+    /* float: left; */
+    /* margin-bottom: 3rem; */
+  }
+  .right-section {
+    max-width: 420px;
+    position: absolute;
+    top: -1rem;
+    right: -1.4rem;
+  }
   input[type="text"] {
     border: 1px solid rgb(214, 210, 210);
     padding-left: 0.6rem;
@@ -457,7 +484,7 @@ Styles
 } */
 .subscriber-sctn {
   width: 90%;
-  height: 340px;
+  height: 210px;
   position: relative;
   margin: 1rem auto;
 
@@ -535,12 +562,13 @@ Styles
 #show-more {
   text-transform: uppercase;
   font-family: var(--ff-primary);
-  color: #000000;
+  color: #5e5959;
   font-weight: 700;
   margin: 0.5rem 0;
 }
 .right-section {
-  margin: 30px 25px;
+  margin: 30px auto;
+  width: 90%;
 }
 .all {
   background: black;
@@ -677,10 +705,12 @@ Styles
 .comment-sort {
   /* background: red; */
   font-size: 0.9rem;
-  margin-top: 1rem;
+  width: 90%;
+  margin: 2rem auto;
+  margin-bottom: 4rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: normal;
-  margin-bottom: 3rem;
+  /* margin-bottom: 3rem; */
 }
 .sorted {
   text-transform: uppercase;
@@ -700,10 +730,10 @@ Styles
 }
 .flow-divider {
   position: absolute;
-  top: 0;
+  top: 0rem;
   left: 3.5rem;
   font-size: 1rem;
-  /* background: red; */
+  /* background: green; */
 }
 .text-comment {
   padding: 0.4rem 0.75rem 0.4rem 0.75rem;
@@ -718,6 +748,7 @@ Styles
 .divider-comment {
   margin-left: 5rem;
   width: 80%;
+  margin-top: -0.6rem;
 }
 .thumb-img {
   width: 45px;
